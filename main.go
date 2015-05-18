@@ -29,6 +29,9 @@ func main() {
 	context := appContext{config: loadConfig("./appURI.json")}
 	port := os.Getenv("PORT")
 
+	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+		w.Write([]byte("Running..."))
+	})
 	http.HandleFunc("/oauth/eventbrite/callback", context.eventbriteOAuthHandler)
 
 	log.Println("Server running on port", port)
