@@ -1,1 +1,1 @@
-web: sayminar-oauth-fwd
+web: sayminarOauthFwd
