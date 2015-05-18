@@ -1,0 +1,5 @@
+{
+	"ImportPath": "github.com/ekkapob/sayminar-oauth-fwd",
+	"GoVersion": "go1.3",
+	"Deps": []
+}
